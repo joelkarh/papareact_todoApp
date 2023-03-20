@@ -1,38 +1,73 @@
 .App {
+  background-color: #f1dec9;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+.App__header {
+  max-width: 900px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App__header h1 {
+  color: #a4907c;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App__header h2 {
+  color: #c8b6a6;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App__section {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.App__article {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.App__form {
+  padding-bottom: 1rem;
+}
+.App__form-input {
+  color: #a4907c;
+  margin-right: 0.5rem;
+}
+#buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+}
+.App__button-create {
+  background-color: #c8b6a6;
+}
+.App__button-delete {
+  background-color: #eb455f;
+}
+.App__button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.App__output {
+  margin-bottom: 15px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.App__output > p {
+  display: block;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.App__output-complete > p::before {
+  content: "";
+  position: absolute;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: red;
+  text-decoration: line-through;
+  height: 2px;
+  width: -webkit-fill-available;
+  top: 48%;
 }
