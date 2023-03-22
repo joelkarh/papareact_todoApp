@@ -1,9 +1,28 @@
-.App {
-  background-color: #f1dec9;
-  max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 50px;
+@font-face {
+  font-family: "Bodoni";
+  src: url("/System/Library/Fonts/Supplemental/Bodoni 72.ttc");
+}
+h3,
+h4,
+p {
+  font-family: "Bodoni";
+  line-height: 25px;
+  font-weight: 400;
+  font-stretch: condensed;
+  letter-spacing: 0.5px;
+}
+h4 {
+  font-style: italic;
+}
+
+.App__main {
+  background: rgba(241, 222, 201, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  min-width: 1200px;
 }
 .App__header {
   max-width: 900px;
@@ -27,10 +46,15 @@
   max-width: 900px;
   margin: 0 auto;
 }
+.App__article > p {
+  padding: 2rem;
+}
 .App__form {
   padding-bottom: 1rem;
+  transform: translateX(3rem);
 }
 .App__form-input {
+  border-color: #a4907c;
   color: #a4907c;
   margin-right: 0.5rem;
 }
@@ -44,12 +68,27 @@
 .App__button-delete {
   background-color: #eb455f;
 }
+.App__button-complete {
+  background-color: green;
+  animation: greenbg 1000ms;
+}
+@keyframes greenbg {
+  0% {
+    background-color: #eeee;
+  }
+  100% {
+    background-color: green;
+  }
+}
 .App__button {
   border: none;
-  padding: 0.5rem;
+  padding: 5px;
   border-radius: 0.5rem;
   cursor: pointer;
+  width: 5rem;
+  height: 2rem;
 }
+
 .App__output {
   margin-bottom: 15px;
   padding: 1.5rem;
@@ -60,14 +99,25 @@
   display: block;
   position: relative;
 }
-
+.App__output-complete {
+  color: green;
+}
 .App__output-complete > p::before {
   content: "";
   position: absolute;
-
   background-color: red;
   text-decoration: line-through;
   height: 2px;
   width: -webkit-fill-available;
   top: 48%;
+}
+// text
+
+@keyframes bounce_A {
+  0% {
+    transfrom: rotate(0deg);
+  }
+  100% {
+    transfrom: rotate(360deg);
+  }
 }

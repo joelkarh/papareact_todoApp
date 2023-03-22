@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:13.5.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:18.2.0"],\
+            ["react-flip-move", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:3.0.5"],\
             ["react-scripts", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:5.0.1"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -11890,6 +11891,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:13.5.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:18.2.0"],\
+            ["react-flip-move", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:3.0.5"],\
             ["react-scripts", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:5.0.1"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -14611,6 +14613,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-error-overlay-npm-6.0.11-021cdeaa92-ce7b44c38f.zip/node_modules/react-error-overlay/",\
           "packageDependencies": [\
             ["react-error-overlay", "npm:6.0.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-flip-move", [\
+        ["npm:3.0.5", {\
+          "packageLocation": "./.yarn/cache/react-flip-move-npm-3.0.5-493d28ca0d-d216ab3563.zip/node_modules/react-flip-move/",\
+          "packageDependencies": [\
+            ["react-flip-move", "npm:3.0.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:3.0.5", {\
+          "packageLocation": "./.yarn/__virtual__/react-flip-move-virtual-a2153c49ad/0/cache/react-flip-move-npm-3.0.5-493d28ca0d-d216ab3563.zip/node_modules/react-flip-move/",\
+          "packageDependencies": [\
+            ["react-flip-move", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:3.0.5"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:fb0021e0db92e8a341ed8d1a09c07a8b5ec62c1862e4ab78c2f64ae155f59b516944851407d2dcc2f2ab1abac37f9cdb401d7731ccd36a7a435e14442d268d08#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
