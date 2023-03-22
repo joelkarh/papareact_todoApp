@@ -61,11 +61,12 @@ useEffect(() => {
     const newTodos = [...todos]
     const item = newTodos[id]
     let newItem = prompt(`Are u sure u want to update ${item.todo}`, item.todo)
-    let todoObj = { todo: newItem, complete: false };
+    const newItemUppercase = newItem.toUpperCase()
+    let todoObj = { todo: newItemUppercase , complete: false };
     newTodos.splice(id, 1, todoObj);
-    if (newItem===null ||newItem==='' || newItem === item) {
+    if (newItemUppercase  === null || newItemUppercase  === '' ||newItemUppercase  === item) {
       return;
-    }else  item.todo = newItem
+    } else item.todo = newItemUppercase 
     setTodos(newTodos)
   }
   // complete a todo item 
